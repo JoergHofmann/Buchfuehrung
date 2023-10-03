@@ -50,7 +50,7 @@
 		<exec executable="context" dir="0_TMP">
 			<arg line="${ant.project.name}.tex --result=${ant.project.name}.pdf" />
 		</exec>
-		<move file="../0_TMP/${ant.project.name}.pdf" tofile="../0_OUT/${ant.project.name}.pdf" />
+		<move file="0_TMP/${ant.project.name}.pdf" tofile="0_OUT/${ant.project.name}.pdf" />
 		<property name="done" value="done" />
 	</target>
 </project>

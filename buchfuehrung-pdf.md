@@ -1,4 +1,4 @@
-@(include "titelseite.md")
+@include "titelseite.md"
 
-@(include "einleitung.md")
+@include "einleitung.md"
 
