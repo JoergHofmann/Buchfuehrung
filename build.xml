@@ -45,7 +45,7 @@
 			<arg line="-l context.lua ${ant.project.name}-pdf.md" />
 		</exec>
 		<exec executable="pandoc" dir="0_TMP">
-			<arg line="${ant.project.name}.md -t context+ntb+raw_tex --template=jho -s -o ${ant.project.name}.tex" />
+			<arg line="${ant.project.name}.md -t context+ntb+raw_tex --toc=true --template=jho -s -o ${ant.project.name}.tex" />
 		</exec>
 		<exec executable="context" dir="0_TMP">
 			<arg line="${ant.project.name}.tex --result=${ant.project.name}.pdf" />
