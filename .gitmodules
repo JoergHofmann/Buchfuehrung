@@ -1,0 +1,3 @@
+[submodule "KaufleuteBueromanagement/0_HUGO/themes/relearn"]
+	path = KaufleuteBueromanagement/0_HUGO/themes/relearn
+	url = https://github.com/McShelby/hugo-theme-relearn.git
