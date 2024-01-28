@@ -1,0 +1,45 @@
+lang: "de-DE"
+contextlang: "de"
+title: "Grundlagen der doppelten Buchführung"
+subtitle: "Kaufleute für Büromanagement"
+pagetitle: "Buchführung"
+shorttitle: "Buchführung"
+wwwCover: "/titelbild-s.png"
+pdfCover: "titelbild.png"
+DieseFirma:
+  name1: "Rat-Pack-Sound-OHG"
+  name2: ""
+  strasse: "Am Speiergarten 13"
+  plz: "65191"
+  ort: "Wiesbaden"
+  tel: ""
+  fax: ""
+  mobil: ""
+  mail: ""
+  www: ""
+  logo: ""
+  bank1name: "Postbank Frankfurt"
+  bank1iban: "DE56 5001 0060 0445 3228 75"
+  bank1bic: "PBNKDEFFXXX"
+  bank2name: "Nassauische Sparkasse (NASPA)"
+  bank2iban: "DE32 5105 0015 0034 2667 86"
+  bank2bic: "NASSDE55XXX"
+  ustid: "DE 347 993 141"
+  ustbesteuerung: "Sollversteuerung"
+  kontenrahmen: "IKR"
+  wirtschaftsjahr: "Kalenderjahr"
+  buchungsperioden: 13
+  gewinnermittlung: "Betriebsvermögensvergleich, Handelsbilanz"
+  beschreibung: |+
+                Auf der Suche nach einer seriösen Tätigkeit gründeten Frank S., Dean M.\ und Sammy D.\ die Rat-Pack-Sound-OHG.
+                Die Firma hat sich auf die Fertigung hochwertiger HiFi-Verstärker spezialisiert und beliefert Einzelhändler im gesamten europäischen Raum.
+                Um ihren Kunden ein komplettes Angebot erstellen zu können, werden weitere Komponenten dazu gekauft. Die eigenen Erzeugnisse sind
+
+                * Verstärker "Röhre 1"
+                * Verstärker "Röhre 2"
+                * Verstärker "Chip"
+jahr: 2021
+kontierung: "http://wiki.contextgarden.net"
+ao_umsatz: "600.000,00€"
+ao_gewinn: "60.000,00€"
+Stichtag: "31.12."
