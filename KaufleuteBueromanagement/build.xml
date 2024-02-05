@@ -6,7 +6,7 @@
 		<property name="prefix" value="kbm-fibu" />
 		<!-- Alle temporären Verzeichnisse leeren. -->
 		<delete includeemptydirs="true">
-			<fileset dir = "0_TMP" includes = "**/*"/>
+			<fileset dir = "0_TMP" includes = "**/*" />
 			<!-- <fileset dir = "0_OUT" includes = "**/*"/>
 			<fileset dir = "0_HUGO/content" includes = "**/*"/>
 			<fileset dir = "${env.local_www_dir}/${ant.project.name}" includes = "**/*"/> -->
@@ -23,6 +23,9 @@
 	</target>
 
 	<target name="copy4hugo" depends="prepare" unless="done">
+		<delete includeemptydirs="true">
+			<fileset dir = "0_HUGO/content" includes = "**/*"/>
+		</delete>
 		<copy todir="0_HUGO/static/images" overwrite="true">
 			<fileset dir="bilder" includes="*.png" />
 			<fileset dir="bilder" includes="*.svg" />

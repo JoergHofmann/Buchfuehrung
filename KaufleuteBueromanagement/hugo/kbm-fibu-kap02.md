@@ -8,4 +8,3 @@ weight: 2
 
 {{% children  %}}
 
-@include "aufgaben_rewe.md"

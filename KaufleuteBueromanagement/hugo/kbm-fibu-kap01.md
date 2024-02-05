@@ -7,5 +7,3 @@ weight: 1
 ---
 
 {{% children  %}}
-
-@include "einleitung.md"
