@@ -1,0 +1,6 @@
+	<exec executable="pandoc" dir="0_TMP/">
+	    <arg line="${ant.project.name}.md -t html --template=jho -s -o ${ant.project.name}.html" />
+	</exec> -->
+	<exec executable="ypp" output="0_TMP/index.html" logError="true">
+	    <arg line="-l html5.lua index.html" />
+	</exec>

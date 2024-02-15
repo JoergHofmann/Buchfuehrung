@@ -1,6 +1,7 @@
 ---
 id: "ag10001"
-sachverhalt: "@(ifpdf '\page')Die Inventur zum 31.12.$(Vorjahr) lieferte folgende Ergebnisse."
+typ: "inventar"
+sachverhalt: "@(ifpdf '\\page')Die Inventur zum 31.12.@(Vorjahr) lieferte folgende Ergebnisse."
 aufgaben: |
   1. Bringen sie die Wirtschaftsgüter in die richtige Reihenfolge und setzen sie auch die Überschriften und Summen an die richtige Stelle.
   1. Berechnen sie alle Summen und das Reinvermögen und tragen sie die Werte in die richtigen Felder ein.

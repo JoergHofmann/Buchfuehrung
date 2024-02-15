@@ -6,13 +6,24 @@
 	<property environment="env" />
 	<property name="ftp.server" value="www342.your-server.de" />
 	<property name="ftp.dir" value="public_html/pecunia-non-olet/Magazin"/>
-		<copy todir="0_TMP" >
+		<delete includeemptydirs="true">
+		    <fileset dir = "0_TMP" includes = "**/*"/>
+		    <fileset dir = "0_OUT" includes = "**/*"/>
+		    <!-- <fileset dir = "${env.local_www_dir}/${ant.project.name}" includes = "**/*"/> -->
+		</delete>
+		<copy todir="0_TMP" overwrite="true" >
 			<fileset dir=".">
 				<include name="*.lua" />
 				<include name="*.yaml" />
 				<include name="*.tex" />
 				<include name="*.html" />
 				<include name="*.md" />
+			</fileset>
+			<fileset dir="formate/">
+				<include name="*.css" />
+			</fileset>
+			<fileset dir="scripts/">
+				<include name="*.js" />
 			</fileset>
 			<fileset dir="Templates/">
 				<include name="*.tex" />
@@ -22,14 +33,11 @@
     </target>
 
     <target name="html" depends="prepare" unless="done">
-	<exec executable="ypp" output="0_TMP/${ant.project.name}.md" logError="true">
+	<exec executable="ypp" dir="0_TMP/" output="0_TMP/${ant.project.name}.md" logError="true">
 	    <arg line="-l html5.lua ${ant.project.name}.md" />
 	</exec>
 	<exec executable="pandoc" dir="0_TMP/">
-	    <arg line="${ant.project.name}.md -t html --template=jho -s -o ${ant.project.name}.html" />
-	</exec>
-	<exec executable="ypp" output="0_TMP/index.html" logError="true">
-	    <arg line="-l html5.lua index.html" />
+	    <arg line="${ant.project.name}.md -t html --template=jho -s -o index.html" />
 	</exec>
 	<property name="done" value="done" />
     </target>
