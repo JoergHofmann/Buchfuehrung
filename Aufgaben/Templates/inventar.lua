@@ -1,8 +1,17 @@
+local sachverhalt = "Die Inventur der @(Projekt.DieseFirma.name1) zum @(Projekt.Stichtag)$(Projekt.jahr - 1) lieferte folgende Ergebnisse@(ifpdf ' (s. nächste Seite)')." 
+
+local aufgaben = [[
+1. Bringen sie die Wirtschaftsgüter in die richtige Reihenfolge und setzen sie auch die Überschriften und Summen an die richtige Stelle.
+1. Berechnen sie alle Summen und das Reinvermögen und tragen sie die Werte in die richtigen Felder ein.
+]]
+
 function main (g) -- {**
     local out = ""
 
-    local sachverhalt = g .. "# Sachverhalt\n\n" .. InputData.sachverhalt .."\n\n"
-    local aufgaben = "\n\n" .. g .. "# Aufgaben\n\n" .. InputData.aufgaben .. "\n\n"
+    -- Überschriften
+
+    sachverhalt = g .. " Sachverhalt\n\n" .. sachverhalt .."\n\n"
+    aufgaben = "\n\n" .. g .. " Aufgaben\n\n" .. aufgaben .. "\n\n"
 
     SummeAV = 0
     SummeUV = 0
@@ -69,12 +78,16 @@ function main (g) -- {**
 		vorlage = vorlage .. line .. "\n"
 	end
     elseif (zielformat == "html5") then
-	for line in io.lines("inventar.html") do 
+	for line in io.lines("0_TMP/inventar.html") do 
 		vorlage = vorlage .. line .. "\n"
 	end
     end
 
-    out = sachverhalt .. aufgaben .. lustache:render(vorlage, OutputData)
+    if zielformat == "html5" then
+	out = sachverhalt .. lustache:render(vorlage, OutputData) .. aufgaben
+    else
+	out = sachverhalt .. aufgaben .. lustache:render(vorlage, OutputData)
+    end
 
     return out 
 end
