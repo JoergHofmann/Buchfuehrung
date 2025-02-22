@@ -1,3 +1,4 @@
+<section>
 ### Worum geht es? 
 
 Wäre ich Autor für eine bekannte Sachbuchreihe, wäre der Titel natürlich "Buchführung für Dummies", doch leider gibt es diesen Band schon.
@@ -16,4 +17,4 @@ Mein Name ist Jörg Hofmann und ich bin seit 2003 Dozent für betriebswirtschaft
 Zum Schluß noch ein Hinweis in eigener Sache:
 
 In diesem Dokument finden sie viele Links zu externen Quellen. Nun ist das Internet eine äußerst schnellebige Angelegenheit und es kann sein, das ein Link nicht mehr funktioniert. In diesem Fall bitte ich um eine kurze Mail an mich: <@(Autor.mail)>
-
+</section>

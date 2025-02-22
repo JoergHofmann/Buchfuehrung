@@ -5,18 +5,42 @@ language: @(Projekt.shortlang)
 version: @(GetShortGITHash "")
 -->
 
-<!-- style="text-align: center"> -->
 # @(Projekt.title)
+![](/images/titelbild.png)
+
+@(Autor.name)
+
+@(Autor.mail)@(br)
+
+Git: @(GetShortGITHash "")
 
 ## Einleitung
 
 @include "einleitung.md"
 
-## Grundbegriffe
 
-@include "aufgaben_rewe.md"
+## Buchführung und Rechnungswesen
+
+@include "aufgaben-rewe.md"
+
+
+## Unsere Firma
 
 @include "firma.md"
 
-## System und Technik der Buchfürung
+
+## Inventur, Inventar, Bilanz
+
 @include "system-technik.md"
+
+
+## Buchen auf Bestandskonten
+
+
+## Buchen mit Erfolgskonten
+
+
+## Die Umsatzsteuer bei Ein- und Verkauf
+## Mein ceterum censeo
+
+@include "ceterum_censeo.md" 
