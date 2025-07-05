@@ -5,8 +5,6 @@ language: @(Projekt.shortlang)
 version: @(GetShortGITHash "")
 -->
 
-@include "titelseite.md"
-
 ## Einleitung
 
 @include "einleitung.md"

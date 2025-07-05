@@ -5,7 +5,9 @@ language: @(Projekt.shortlang)
 version: @(GetShortGITHash "")
 -->
 
+<!-- style = "h1 {color: blue}" -->
 # @(Projekt.title)
+
 ![](/images/titelbild.png)
 
 @(Autor.name)
@@ -41,6 +43,11 @@ Git: @(GetShortGITHash "")
 
 
 ## Die Umsatzsteuer bei Ein- und Verkauf
+
+## Reisekosten/Spesen
+
+@include "reisekosten.md" 
+
 ## Mein ceterum censeo
 
 @include "ceterum_censeo.md" 

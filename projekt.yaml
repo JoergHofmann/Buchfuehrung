@@ -1,4 +1,5 @@
 ---
+context-lang: @(Projekt.contextlang)
 lang: "de-DE"
 shortlang: "DE"
 title: "Grundlagen der doppelten Buchführung"
@@ -7,3 +8,9 @@ pagetitle: "Buchführung"
 shorttitle: "Buchführung"
 pdf-cover: "titelbild.png"
 www-cover: "titelbild.png"
+title: @(Projekt.title)
+subtitle: @(Projekt.subtitle)
+cover: @(Projekt.pdfCover)
+date: @(Monat[heute.month].MMMM) @(heute.year)
+git: @(GetShortGITHash "")
+author: @(Autor.name)
