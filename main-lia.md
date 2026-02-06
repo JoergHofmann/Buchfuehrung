@@ -25,6 +25,10 @@ Git: @(GetShortGITHash "")
 
 @include "aufgaben-rewe.md"
 
+## Rechtliche Grundlagen und GoB
+
+@include "gob.md"
+
 
 ## Unsere Firma
 

@@ -1,26 +1,24 @@
 ---
 intro: |
-        Auf der Suche nach einer seriösen Tätigkeit gründeten Frank S., Dean M. und Sammy D. die Rat Pack Sound OHG.
-        Die Firma hat sich auf die Fertigung hochwertiger HiFi-Verstärker spezialisiert und beliefert Einzelhändler im gesamten
-        europäischen Raum. Um ihren Kunden ein komplettes Angebot erstellen zu können, werden weitere Komponenten dazu gekauft.
-        Die eigenen Erzeugnisse sind
+       Innenarchitekt Orson W. und Schreinermeister Curd J. arbeiten schon seit Jahren erfolgreich zusammen.
+       Um der zunehmenden Konkurrenz aus den neuen EU-Staaten besser begegnen zu können, legen sie im $(Monat[StartMonat].MMMM) $(Jahr)
+       ihre Firmen zusammen und gründen die W+J-Ladenbau-OHG.
 
-         * Verstärker "Röhre 1"
-         * Verstärker "Röhre 2"
-         * Verstärker "Chip"
+       Die W+J-Ladenbau-OHG plant, liefert und baut Einrichtungen für exklusive Einzelhandelsgeschäfte, wie
+       Juweliere, Optiker oder Boutiquen. Daneben werden hochwertige Büromöbel in Kleinserie gefertigt und an ausgewählte Händler geliefert.
 
 
 
-name1: "Rat-Pack-Sound-OHG"
+name1: "W+J-Ladenbau-OHG"
 name2: ""
-strasse: "Am Speiergarten 13"
-plz: "65191"
-ort: "Wiesbaden"
-tel: ""
-fax: ""
+strasse: "Hongkong-Macao-Straße 3"
+plz: "64372"
+ort: "Ober-Ramstadt"
+tel: "+49 6154 88834-0"
+fax: "+49 6154 88834-9"
 mobil: ""
-mail: ""
-www: ""
+mail: "info@w+j-ohg.de"
+www: "www.w+j-ohg.de"
 logo: ""
 bank1name: "Postbank Frankfurt"
 bank1iban: "DE56 5001 0060 0445 3228 75"

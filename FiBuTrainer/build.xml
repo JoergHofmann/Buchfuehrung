@@ -21,7 +21,7 @@
 			    <include name="*.yaml" />
 			    <include name="*.tex" />
 			    <include name="*.md" />
-                <include name="*.html" />
+                            <include name="*.html" />
 			</fileset>
 		</copy>
 	</target>
@@ -57,14 +57,6 @@
 	    <copy todir="0_LIA/videos" overwrite="true" >
 			<fileset dir="videos" includes="*.mp4" />
 		</copy>
-	</target>
-
-	<target name="test-lia" depends="prepare" unless="done">
-	    <antcall target="copy4lia" />
-	    <exec executable="ypp" dir="0_TMP" output="0_LIA/${ant.project.name}.md" logError="true">
-		<arg line="-l liascript.lua test-lia.md" />
-	    </exec>
-	    <property name="done" value="done" />
 	</target>
 
 	<target name="lia" depends="prepare" unless="done">

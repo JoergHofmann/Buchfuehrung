@@ -1,53 +1,46 @@
-@(LoadCompany "")
 <section>
-@(DieseFirma.intro)
+
+Innenarchitekt Orson W.\ und Schreinermeister Curd J.\ arbeiten schon seit Jahren erfolgreich zusammen.
+Um der zunehmenden Konkurrenz aus den neuen EU-Staaten besser begegnen zu können, legen sie im $(Monat[StartMonat].MMMM) $(Jahr)
+ihre Firmen zusammen und gründen die W+J-Ladenbau-OHG.
+
+Die W+J-Ladenbau-OHG plant, liefert und baut Einrichtungen für exklusive Einzelhandelsgeschäfte, wie
+Juweliere, Optiker oder Boutiquen. Daneben werden hochwertige Büromöbel in Kleinserie gefertigt und an ausgewählte Händler geliefert.
+
+Die wichtigsten Merkmale sind:
 
 
-### Firmenangaben
-
-<table>
-	<tr>
-		<td width="150" align="right">Firma:</td>
-		<td>@(DieseFirma.name1)</td>
-	</tr>
-	<tr>
-		<td width="150" align="right">Anschrift:</td>
-		<td>@(DieseFirma.strasse)<br />
-		   @(DieseFirma.plz) @(DieseFirma.ort)</td>
-	</tr>
-	<tr>
-		<td width="150" align="right">Bankverbindungen:</td>
-		<td>@(DieseFirma.bank1name)<br />
-                    @(DieseFirma.bank1iban)<br />
-		    @(DieseFirma.bank1bic)<br /><br />
-                    @(DieseFirma.bank2name)<br />
-		    @(DieseFirma.bank2iban)<br />
-		    @(DieseFirma.bank2bic)</td>
-	</tr>
-	<tr>
-		<td width="150" align="right">USt-IdNr.:</td>
-                <td>@(DieseFirma.ustid)</td>
-	</tr>
-	<tr>
-		<td width="150" align="right">Kontenrahmen:</td>
-		<td>@(DieseFirma.kontenrahmen)</td>
-	</tr>
-	<tr>
-		<td width="150" align="right">Wirtschaftsjahr:</td>
-		<td>@(DieseFirma.wirtschaftsjahr), @(DieseFirma.buchungsperioden) Buchungsperioden</td>
-	</tr>
-	<tr>
-		<td width="150" align="right">Gewinnermittlungsart:</td>
-		<td>@(DieseFirma.gewinnermittlung)</td>
-	</tr>
-	<tr>
-		<td width="150" align="right">Art der Besteuerung:</td>
-		<td>@(DieseFirma.ustbesteuerung)</td>
-	</tr>
-	<tr>
-		<td width="150" align="right">Buchungsjahr:</td>
-		<td>@(DieseFirma.jahr)</td>
-	</tr>
-</table>
-
+|     |     |
+|-------------------------:|:-----------------------|
+|Firma:     | W+J-Ladenbau-OHG|
+|   |   |
+|Anschrift:|Hongkong-Macao-Straße 3|
+|    |64372 Ober-Ramstadt|
+|   |   |
+| Telefon:  |+49(6154)88834-0|
+| Fax:| +49(6154)88834-9|
+|Internet:|https://www.w+j.ohg.de|
+|Mail:|info@w+j-ohg.de|
+|   |   |
+| Handelsregister:| HRA 4367|
+|                 | AG Darmstadt|
+|                 |             |
+| USt-IdNr.:      | DE3341 8762 5|
+|   |   |
+|Bankverbindung:  | Volksbank Modau eG|
+|                 | DE23 5086 4322 6543 3211 61|
+|                 | GENODE51ORA|
+|                 |   |
+|                 | Commerzbank AG|
+|                 | DE33 5104 0038 0445 3321 00|
+|                 | COBADEFFXXX|
+|   |   |
+|Gesellschafter:| Orson W.|
+|               | Curd J.|
+|   |   |
+|Kontenrahmen: | @(Projekt.kontenrahmen)|
+|Wirtschaftsjahr:| Kalenderjahr|
+|Gewinnermittlungsart:| Betriebsvermögensvergleich, Handelsbilanz|
+|Art der Besteuerung:| Sollversteuerung|
+|Erstes Buchungsjahr:| @(Projekt.jahr)|
 </section>
